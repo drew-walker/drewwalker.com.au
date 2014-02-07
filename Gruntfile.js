@@ -21,20 +21,21 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
-      buildcontrol: {
-          options: {
-              commit: true,
-              push: true,
-              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-          },
-          heroku: {
-              options: {
-                  remote: 'git@heroku.com:drewwalker.git',
-                  branch: 'master',
-                  tag: pkg.version
-              }
-          }
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
+      heroku: {
+        options: {
+          remote: 'git@heroku.com:drewwalker.git',
+          branch: 'master',
+          tag: pkg.version
+        }
+      }
+    },
 
     // Project settings
     yeoman: {
