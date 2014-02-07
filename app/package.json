@@ -1,0 +1,22 @@
+{
+    "name": "drewwalker.com.au",
+    "version": "0.0.0",
+    "description": "This example app is so cool.",
+    "main": "web.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drew-walker/drewwalker.com.au.git"
+    },
+    "author": "Drew Walker",
+    "license": "BSD-2-Clause",
+    "bugs": {
+        "url": "https://github.com/drew-walker/drewwalker.com.au/issues"
+    },
+    "dependencies": {
+        "logfmt": "~0.20.0",
+        "express": "~3.4.8"
+    }
+}
