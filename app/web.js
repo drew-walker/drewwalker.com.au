@@ -1,7 +1,6 @@
 /**
  * Created by drew on 7/02/2014.
  */
-require('newrelic');
 var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
